@@ -2,6 +2,14 @@
     --light-grey: #eee;
     --darker-grey: #ddd; 
 }
+
+/* he .wrapper CSS class is defining a grid layout for the HTML element it is applied to. Here's a brief explanation of each property:
+
+display: grid;: This property sets the element's display type to grid, enabling grid layout.
+
+grid-template-columns: 70% 30%;: This creates two columns within the grid. The first column will take up 70% of the container's width, and the second column will take up 30%.
+
+grid-gap: 1em;: This is a shorthand property for setting both the row and column gaps between grid items. It sets a gap of 1em between each row and column in the grid. */
 .wrapper {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -12,11 +20,22 @@
     grid-gap: 1em;
 }
 
+/* .wrapper > div:
+
+- This selector targets all div elements that are direct children of the element with the class .wrapper.
+- The > combinator is used to select elements that are direct children of a specified element, excluding any descendants that are further nested.
+- Any style rules defined within this block will apply to all matched div elements, regardless of their position or order within .wrapper. */
 .wrapper > div{
     background-color: var(--light-grey);
     padding: 1em;
 }
 
+/* .wrapper > div:nth-child(odd):
+
+- This selector is more specific and targets only the odd-numbered div elements that are direct children of .wrapper.
+- The :nth-child(odd) pseudo-class is a structural pseudo-class that matches elements based on their position in a group of siblings.
+- In this case, it matches every div that is an odd-numbered child (1st, 3rd, 5th, etc.) of its parent .wrapper.
+- Styles defined within this block will only apply to those div elements that meet this specific condition. */
 .wrapper > div:nth-child(odd){
     background-color: var(--darker-grey);
     

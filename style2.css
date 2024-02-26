@@ -9,8 +9,8 @@
     grid-template-columns:1fr 2fr 1fr;
     */
     grid-template-columns: repeat(3, 1fr);
-
-
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .wrapper >div {
@@ -21,3 +21,7 @@
 .wrapper > div:nth-child(odd){
     background-color: var(--darker-grey);
 }
+
+/*14:13
+https://www.youtube.com/watch?v=jV8B24rSN5o
+*/

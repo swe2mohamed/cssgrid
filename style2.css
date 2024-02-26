@@ -1,0 +1,19 @@
+:root {
+    --light-grey: #eee;
+    --darker-grey: #ddd;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+
+}
+
+.wrapper >div {
+    background-color: var(--light-grey);
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd){
+    background-color: var(--darker-grey);
+}
